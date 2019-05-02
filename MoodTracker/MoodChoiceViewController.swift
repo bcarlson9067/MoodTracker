@@ -9,7 +9,7 @@
 import UIKit
 import EventKit
 
-class ViewController: UIViewController {
+class MoodChoiceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
