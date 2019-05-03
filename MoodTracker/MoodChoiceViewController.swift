@@ -9,6 +9,8 @@
 import UIKit
 import EventKit
 
+var mood: String!
+
 class MoodChoiceViewController: UIViewController {
     
     override func viewDidLoad() {
