@@ -9,6 +9,8 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
+    
+    var mood: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
