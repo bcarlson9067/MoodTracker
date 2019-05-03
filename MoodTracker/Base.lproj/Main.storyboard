@@ -199,9 +199,37 @@
                     <view key="view" contentMode="scaleToFill" id="Cf7-OZ-Wbq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fvj-gL-x0h">
+                                <rect key="frame" x="10" y="98" width="394" height="754"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Selected:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgy-7s-JnH">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="372"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReZ-NA-Ai3">
+                                        <rect key="frame" x="0.0" y="382" width="394" height="372"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Fvj-gL-x0h" firstAttribute="leading" secondItem="z9e-DF-D2l" secondAttribute="leading" constant="10" id="L4k-tj-BoZ"/>
+                            <constraint firstItem="z9e-DF-D2l" firstAttribute="trailing" secondItem="Fvj-gL-x0h" secondAttribute="trailing" constant="10" id="R22-F3-xIC"/>
+                            <constraint firstItem="Fvj-gL-x0h" firstAttribute="top" secondItem="z9e-DF-D2l" secondAttribute="top" constant="10" id="Two-dq-r4Q"/>
+                            <constraint firstItem="z9e-DF-D2l" firstAttribute="bottom" secondItem="Fvj-gL-x0h" secondAttribute="bottom" constant="10" id="Y0H-kA-mYt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="z9e-DF-D2l"/>
                     </view>
+                    <connections>
+                        <outlet property="moodLabel" destination="ReZ-NA-Ai3" id="b1d-V5-qxJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Sw-DH-W9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

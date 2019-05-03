@@ -11,9 +11,11 @@ import UIKit
 class DetailsViewController: UIViewController {
     
     var mood: String!
-
+    @IBOutlet weak var moodLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        moodLabel.text = mood
 
         // Do any additional setup after loading the view.
     }
