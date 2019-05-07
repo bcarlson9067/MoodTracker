@@ -11,11 +11,15 @@ import UIKit
 class DetailsViewController: UIViewController {
     
     var mood: String!
+    var buttonColor: UIColor!
     @IBOutlet weak var moodLabel: UILabel!
+    @IBOutlet weak var detailsTextField: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         moodLabel.text = mood
+        moodLabel.backgroundColor = buttonColor
 
         // Do any additional setup after loading the view.
     }
