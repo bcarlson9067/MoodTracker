@@ -12,6 +12,9 @@ class DetailsViewController: UIViewController {
     
     var mood: String!
     var buttonColor: UIColor!
+    var stringDate: String!
+    var chosenMonth: String!
+    let months: [String] = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     @IBOutlet weak var moodLabel: UILabel!
     @IBOutlet weak var detailsTextField: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -22,6 +25,23 @@ class DetailsViewController: UIViewController {
         moodLabel.backgroundColor = buttonColor
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func datePickerChanged(_ sender: Any) {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .full
+        formatter.timeStyle = .none
+        stringDate = formatter.string(from: datePicker.date)
+    }
+    
+    @IBAction func whenAddButtonPressed(_ sender: Any) {
+        for month in months {
+            if stringDate.contains(month) {
+                chosenMonth = month
+                print(chosenMonth!)
+            }
+        }
+        detailsTextField.resignFirstResponder()
     }
     
 
