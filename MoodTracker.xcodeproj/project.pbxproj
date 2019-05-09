@@ -13,6 +13,7 @@
 		89F16DCB2278AAEA008DB620 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89F16DC92278AAEA008DB620 /* Main.storyboard */; };
 		89F16DCD2278AAEB008DB620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F16DCC2278AAEB008DB620 /* Assets.xcassets */; };
 		89F16DD02278AAEB008DB620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89F16DCE2278AAEB008DB620 /* LaunchScreen.storyboard */; };
+		F083D40422848B71002321E5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F083D40322848B71002321E5 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		89F16DCC2278AAEB008DB620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89F16DCF2278AAEB008DB620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89F16DD12278AAEB008DB620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F083D40322848B71002321E5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				89F16DCC2278AAEB008DB620 /* Assets.xcassets */,
 				89F16DCE2278AAEB008DB620 /* LaunchScreen.storyboard */,
 				89F16DD12278AAEB008DB620 /* Info.plist */,
+				F083D40322848B71002321E5 /* WelcomeViewController.swift */,
 			);
 			path = MoodTracker;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89F16DC82278AAEA008DB620 /* MoodChoiceViewController.swift in Sources */,
+				F083D40422848B71002321E5 /* WelcomeViewController.swift in Sources */,
 				89F16DC62278AAEA008DB620 /* AppDelegate.swift in Sources */,
 				12D19C25227C9D9300235FE0 /* DetailsViewController.swift in Sources */,
 			);
