@@ -10,8 +10,14 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var moodTrackerLabel: UILabel!
+    @IBOutlet weak var getStartedButton: UIButton!
+    @IBOutlet weak var moodTrackerLogo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.getStartedButton.layer.cornerRadius = 22
+        
 
         // Do any additional setup after loading the view.
     }
