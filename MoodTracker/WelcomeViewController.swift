@@ -16,8 +16,18 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //button details
         self.getStartedButton.layer.cornerRadius = 22
+        getStartedButton.layer.shadowColor = UIColor.lightGray.cgColor
+        getStartedButton.layer.shadowRadius = 4
+        getStartedButton.layer.shadowOpacity = 0.5
+        getStartedButton.layer.shadowOffset = CGSize(width: 0, height: 0)
         
+        //label details
+        moodTrackerLabel.layer.shadowColor = UIColor.lightGray.cgColor
+        moodTrackerLabel.layer.shadowRadius = 4
+        moodTrackerLabel.layer.shadowOpacity = 0.5
+        moodTrackerLabel.layer.shadowOffset = CGSize(width: 0, height: 0)
 
         // Do any additional setup after loading the view.
     }
