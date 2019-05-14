@@ -16,8 +16,8 @@ class MoodChoiceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //rounding buttons
-        
+
+       
         // Do any additional setup after loading the view.
     }
 
