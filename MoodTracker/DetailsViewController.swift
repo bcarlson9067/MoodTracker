@@ -16,6 +16,9 @@ class DetailsViewController: UIViewController {
     var chosenMonth: String!
     var datePickerDate: Date!
     var day: Int!
+    var datePickerMonth: Int!
+    var year: Int!
+    
     let months: [String] = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     @IBOutlet weak var moodLabel: UILabel!
     @IBOutlet weak var detailsTextField: UITextField!
@@ -50,7 +53,11 @@ class DetailsViewController: UIViewController {
             let nvc = segue.destination as! CalendarViewController
         datePickerDate = datePicker.date
         day = calendar.component(.day, from: datePickerDate)
+        datePickerMonth = calendar.component(.month, from: datePickerDate)
+        year = calendar.component(.year, from: datePickerDate)
         nvc.chosenDay = day
         nvc.chosenColor = buttonColor
+        nvc.chosenMonth = datePickerMonth
+        nvc.chosenYear = year
     }
 }
