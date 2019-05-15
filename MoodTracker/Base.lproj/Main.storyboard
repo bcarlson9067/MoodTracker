@@ -273,12 +273,16 @@
                                             <!--2019-05-07 16:15:27 +0000-->
                                         </date>
                                         <locale key="locale" localeIdentifier="en_US"/>
+                                        <connections>
+                                            <action selector="datePickerChanged:" destination="TaC-6K-QmF" eventType="valueChanged" id="JUJ-7q-Zbo"/>
+                                        </connections>
                                     </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOh-MK-nVf">
                                         <rect key="frame" x="0.0" y="630.5" width="394" height="123.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="Add"/>
                                         <connections>
+                                            <action selector="whenAddButtonPressed:" destination="TaC-6K-QmF" eventType="touchUpInside" id="ddv-V8-kRh"/>
                                             <segue destination="AWs-Ef-dBL" kind="show" id="z3K-DJ-n8F"/>
                                         </connections>
                                     </button>

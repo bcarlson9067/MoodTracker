@@ -34,6 +34,7 @@ class DetailsViewController: UIViewController {
         formatter.dateStyle = .full
         formatter.timeStyle = .none
         stringDate = formatter.string(from: datePicker.date)
+        print(stringDate)
     }
     
     @IBAction func whenAddButtonPressed(_ sender: Any) {
@@ -41,9 +42,9 @@ class DetailsViewController: UIViewController {
             if stringDate.contains(month) {
                 chosenMonth = month
                 print(chosenMonth!)
-
             }
         }
+        let moodDetails = detailsTextField.text
         detailsTextField.resignFirstResponder()
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
