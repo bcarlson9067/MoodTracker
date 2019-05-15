@@ -14,6 +14,8 @@ class DetailsViewController: UIViewController {
     var buttonColor: UIColor!
     var stringDate: String!
     var chosenMonth: String!
+    var datePickerDate: Date!
+    var day: Int!
     let months: [String] = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     @IBOutlet weak var moodLabel: UILabel!
     @IBOutlet weak var detailsTextField: UITextField!
@@ -39,20 +41,16 @@ class DetailsViewController: UIViewController {
             if stringDate.contains(month) {
                 chosenMonth = month
                 print(chosenMonth!)
+
             }
         }
         detailsTextField.resignFirstResponder()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+            let nvc = segue.destination as! CalendarViewController
+        datePickerDate = datePicker.date
+        day = calendar.component(.day, from: datePickerDate)
+        nvc.chosenDay = day
+        nvc.chosenColor = buttonColor
     }
-    */
-
 }
