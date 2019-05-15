@@ -17,6 +17,8 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
     var previousNumberOfEmptyBox = 0
     var direction = 0
     var positionIndex = 0
+    var chosenDay: Int!
+    var chosenColor: UIColor!
     
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     let daysOfMonth = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
@@ -137,6 +139,9 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
         }
         if Int(cell.dateLabel.text!)! < 1 {
             cell.isHidden = true
+        }
+        if Int(cell.dateLabel.text!)! == chosenDay {
+            cell.backgroundColor = chosenColor
         }
         return cell
     }
