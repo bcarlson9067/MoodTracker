@@ -19,6 +19,8 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
     var positionIndex = 0
     var chosenDay: Int!
     var chosenColor: UIColor!
+    var chosenMonth: Int!
+    var chosenYear: Int!
     var moodDetails: String!
     
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
@@ -29,7 +31,9 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
         Calendar.delegate = self
         Calendar.dataSource = self
         super.viewDidLoad()
-        currentMonth = months[month - 1]
+        currentMonth = months[chosenMonth - 1]
+        month = chosenMonth
+        year = chosenYear
         monthLabel.text = "\(currentMonth) \(year)"
         getStartDayPosition()
     }
@@ -41,7 +45,6 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
             getStartDayPosition()
             month = 12
             year -= 1
-            //
             currentMonth = months[month - 1]
             monthLabel.text = "\(currentMonth) \(year)"
             Calendar.reloadData()
@@ -141,7 +144,7 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
         if Int(cell.dateLabel.text!)! < 1 {
             cell.isHidden = true
         }
-        if Int(cell.dateLabel.text!)! == chosenDay {
+        if Int(cell.dateLabel.text!)! == chosenDay && currentMonth == months[chosenMonth - 1] && year == chosenYear {
             cell.backgroundColor = chosenColor
         }
         return cell
