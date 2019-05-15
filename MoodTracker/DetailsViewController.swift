@@ -16,6 +16,7 @@ class DetailsViewController: UIViewController {
     var chosenMonth: String!
     var datePickerDate: Date!
     var day: Int!
+    var moodDetails: String!
     let months: [String] = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     @IBOutlet weak var moodLabel: UILabel!
     @IBOutlet weak var detailsTextField: UITextField!
@@ -25,7 +26,7 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
         moodLabel.text = mood
         moodLabel.backgroundColor = buttonColor
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -44,14 +45,19 @@ class DetailsViewController: UIViewController {
                 print(chosenMonth!)
             }
         }
-        let moodDetails = detailsTextField.text
+        if detailsTextField.text != nil {
+            moodDetails = detailsTextField.text
+        } else {
+            moodDetails = "No details added"
+        }
         detailsTextField.resignFirstResponder()
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            let nvc = segue.destination as! CalendarViewController
+        let nvc = segue.destination as! CalendarViewController
         datePickerDate = datePicker.date
         day = calendar.component(.day, from: datePickerDate)
         nvc.chosenDay = day
         nvc.chosenColor = buttonColor
+        nvc.moodDetails = moodDetails
     }
 }
