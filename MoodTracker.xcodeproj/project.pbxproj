@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		126BF846228DC40A00617EC0 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BF845228DC40A00617EC0 /* Mood.swift */; };
 		12D19C25227C9D9300235FE0 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D19C24227C9D9300235FE0 /* DetailsViewController.swift */; };
 		89C3ACA6228B1E6400353FC6 /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C3ACA5228B1E6400353FC6 /* CalendarVars.swift */; };
 		89C3ACA8228B1E8E00353FC6 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C3ACA7228B1E8E00353FC6 /* DateCollectionViewCell.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		126BF845228DC40A00617EC0 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		12D19C24227C9D9300235FE0 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		89C3ACA5228B1E6400353FC6 /* CalendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
 		89C3ACA7228B1E8E00353FC6 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				89F16DC52278AAEA008DB620 /* AppDelegate.swift */,
 				89F16DC72278AAEA008DB620 /* MoodChoiceViewController.swift */,
 				89F16DC92278AAEA008DB620 /* Main.storyboard */,
+				126BF845228DC40A00617EC0 /* Mood.swift */,
 				89C3ACA5228B1E6400353FC6 /* CalendarVars.swift */,
 				89C3ACA7228B1E8E00353FC6 /* DateCollectionViewCell.swift */,
 				12D19C24227C9D9300235FE0 /* DetailsViewController.swift */,
@@ -154,6 +157,7 @@
 				F083D40422848B71002321E5 /* WelcomeViewController.swift in Sources */,
 				89C3ACA6228B1E6400353FC6 /* CalendarVars.swift in Sources */,
 				89F16DC62278AAEA008DB620 /* AppDelegate.swift in Sources */,
+				126BF846228DC40A00617EC0 /* Mood.swift in Sources */,
 				12D19C25227C9D9300235FE0 /* DetailsViewController.swift in Sources */,
 				89C3ACAC228B249F00353FC6 /* CalendarViewController.swift in Sources */,
 				89C3ACA8228B1E8E00353FC6 /* DateCollectionViewCell.swift in Sources */,
