@@ -33,21 +33,21 @@ class DetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func datePickerChanged(_ sender: Any) {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .full
-        formatter.timeStyle = .none
-        stringDate = formatter.string(from: datePicker.date)
-        print(stringDate)
-    }
+//    @IBAction func datePickerChanged(_ sender: Any) {
+//        let formatter = DateFormatter()
+//        formatter.dateStyle = .full
+//        formatter.timeStyle = .none
+//        stringDate = formatter.string(from: datePicker.date)
+//        print(stringDate)
+//    }
     
     @IBAction func whenAddButtonPressed(_ sender: Any) {
-        for month in months {
-            if stringDate.contains(month) {
-                chosenMonth = month
-                print(chosenMonth!)
-            }
-        }
+//        for month in months {
+//            if stringDate.contains(month) {
+//                chosenMonth = month
+//                print(chosenMonth!)
+//            }
+//        }
         if detailsTextField.text != nil {
             moodDetails = detailsTextField.text
         } else {
