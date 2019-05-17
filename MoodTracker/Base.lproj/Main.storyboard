@@ -65,26 +65,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bTK-wd-6r8">
-                                <rect key="frame" x="10" y="98" width="414" height="774"/>
+                                <rect key="frame" x="10" y="54" width="414" height="818"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How are you feeling today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFR-RA-p8K">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="82"/>
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="reY-J5-lSg">
-                                        <rect key="frame" x="0.0" y="87" width="414" height="77"/>
+                                        <rect key="frame" x="0.0" y="92" width="414" height="82"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DU-1E-Wph">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="77"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="82"/>
                                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="whenRedButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Gt-ls-nxi"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Angry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyw-7J-hI0">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="77"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="82"/>
                                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -92,17 +92,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="X6c-xa-zc6">
-                                        <rect key="frame" x="0.0" y="174" width="414" height="77.5"/>
+                                        <rect key="frame" x="0.0" y="184" width="414" height="82"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1B-cr-8Dj">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="77.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="82"/>
                                                 <color key="backgroundColor" red="1" green="0.55554366440000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="whenOrangeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qwo-Wh-1sQ"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Excited" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHB-BD-Z2g">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="77.5"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="82"/>
                                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -110,17 +110,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="R8j-0W-zJL">
-                                        <rect key="frame" x="0.0" y="261.5" width="414" height="77"/>
+                                        <rect key="frame" x="0.0" y="276" width="414" height="82"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtb-6l-A3U">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="77"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="82"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="whenYellowButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BA4-14-RV4"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gv9-A5-M8e">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="77"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="82"/>
                                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -128,17 +128,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WJm-1E-wMf">
-                                        <rect key="frame" x="0.0" y="348.5" width="414" height="77"/>
+                                        <rect key="frame" x="0.0" y="368" width="414" height="82"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkD-ZK-jAb">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="77"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="82"/>
                                                 <color key="backgroundColor" red="0.0" green="0.64552299219999998" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="whenGreenButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rSa-5F-ci9"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jealous" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RL-Xz-RuC">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="77"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="82"/>
                                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -146,17 +146,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JrV-YL-GIW">
-                                        <rect key="frame" x="0.0" y="435.5" width="414" height="77"/>
+                                        <rect key="frame" x="0.0" y="460" width="414" height="82"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6h5-ZU-9FF">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="77"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="82"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47808754282739724" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="whenBlueButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TNo-ty-fEh"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpK-I5-IWa">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="77"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="82"/>
                                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -164,17 +164,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="L1L-3y-i1A">
-                                        <rect key="frame" x="0.0" y="522.5" width="414" height="77.5"/>
+                                        <rect key="frame" x="0.0" y="552" width="414" height="82"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WH-iL-j8C">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="77.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="82"/>
                                                 <color key="backgroundColor" red="0.66424978599999995" green="0.0" blue="0.87355522260273977" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="whenPurpleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pl1-qA-pRW"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Productive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuT-E5-k96">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="77.5"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="82"/>
                                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -182,17 +182,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wOX-8d-sy6">
-                                        <rect key="frame" x="0.0" y="610" width="414" height="77"/>
+                                        <rect key="frame" x="0.0" y="644" width="414" height="82"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byn-Xd-v7R">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="77"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="82"/>
                                                 <color key="backgroundColor" red="1" green="0.2527923882" blue="0.75425406678082196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="whenPinkButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RAu-ID-a75"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaI-eF-9T9">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="77"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="82"/>
                                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -200,17 +200,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EF6-ST-ovS">
-                                        <rect key="frame" x="0.0" y="697" width="414" height="77"/>
+                                        <rect key="frame" x="0.0" y="736" width="414" height="82"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhB-2V-eNE">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="77"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="82"/>
                                                 <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
                                                     <action selector="whenGreyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Tn-e1-Kvz"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dead" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTq-HQ-aTa">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="77"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="82"/>
                                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -229,7 +229,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="knn-qk-Cqf"/>
+                    <navigationItem key="navigationItem" id="knn-qk-Cqf">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="SQu-5Q-Glq"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="blueButton" destination="6h5-ZU-9FF" id="8GE-Ib-L4J"/>
                         <outlet property="greenButton" destination="hkD-ZK-jAb" id="FDR-7N-hXm"/>
@@ -255,28 +257,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fvj-gL-x0h">
-                                <rect key="frame" x="10" y="98" width="394" height="754"/>
+                                <rect key="frame" x="10" y="54" width="394" height="798"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Selected:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgy-7s-JnH">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="67"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="71"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReZ-NA-Ai3">
-                                        <rect key="frame" x="0.0" y="77" width="394" height="66.5"/>
+                                        <rect key="frame" x="0.0" y="81" width="394" height="70.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter details here" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EGL-Q4-qOM">
-                                        <rect key="frame" x="0.0" y="153.5" width="394" height="56"/>
+                                        <rect key="frame" x="0.0" y="161.5" width="394" height="59"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="EFh-Eh-J3N">
-                                        <rect key="frame" x="0.0" y="219.5" width="394" height="401"/>
+                                        <rect key="frame" x="0.0" y="230.5" width="394" height="424.5"/>
                                         <date key="date" timeIntervalSinceReferenceDate="578938527.50196397">
                                             <!--2019-05-07 16:15:27 +0000-->
                                         </date>
@@ -286,12 +288,12 @@
                                         </connections>
                                     </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOh-MK-nVf">
-                                        <rect key="frame" x="0.0" y="630.5" width="394" height="123.5"/>
+                                        <rect key="frame" x="0.0" y="665" width="394" height="133"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="Add"/>
                                         <connections>
                                             <action selector="whenAddButtonPressed:" destination="TaC-6K-QmF" eventType="touchUpInside" id="ddv-V8-kRh"/>
-                                            <segue destination="AWs-Ef-dBL" kind="show" id="z3K-DJ-n8F"/>
+                                            <segue destination="AWs-Ef-dBL" kind="show" identifier="detailsToCalendarSegue" id="z3K-DJ-n8F"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -306,6 +308,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="z9e-DF-D2l"/>
                     </view>
+                    <navigationItem key="navigationItem" id="yDf-eV-gde" userLabel="Navigation Item">
+                        <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="EZ0-xV-JdZ"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C58-Mk-M2f">
+                            <rect key="frame" x="179" y="4" width="56" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="Home"/>
+                            <connections>
+                                <segue destination="yp9-SQ-PbZ" kind="show" id="PqD-di-dLp"/>
+                            </connections>
+                        </button>
+                    </navigationItem>
                     <connections>
                         <outlet property="datePicker" destination="EFh-Eh-J3N" id="kvG-8d-n6h"/>
                         <outlet property="detailsTextField" destination="EGL-Q4-qOM" id="7fm-i2-IMA"/>
@@ -437,6 +452,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="SmT-1t-D8K"/>
                     </view>
+                    <navigationItem key="navigationItem" id="DvD-KV-pSQ" userLabel="Navigation Item">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zzM-KW-gMp">
+                            <rect key="frame" x="179" y="4" width="56" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="Home"/>
+                            <connections>
+                                <segue destination="yp9-SQ-PbZ" kind="show" id="3qg-kh-Xei"/>
+                            </connections>
+                        </button>
+                    </navigationItem>
                     <connections>
                         <outlet property="Calendar" destination="Bdf-lS-LMQ" id="uuz-f2-SXs"/>
                         <outlet property="monthLabel" destination="4SL-2R-Ulf" id="SwH-d3-qaM"/>
@@ -468,4 +495,7 @@
     <resources>
         <image name="moodTrackerLogo" width="342" height="282"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="3qg-kh-Xei"/>
+    </inferredMetricsTieBreakers>
 </document>
