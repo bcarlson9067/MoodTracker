@@ -54,7 +54,8 @@ class DetailsViewController: UIViewController {
         }
         detailsTextField.resignFirstResponder()
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue , sender: Any?) {
+        if segue.identifier == "detailsToCalendarSegue" {
         let nvc = segue.destination as! CalendarViewController
         datePickerDate = datePicker.date
         day = calendar.component(.day, from: datePickerDate)
@@ -65,5 +66,6 @@ class DetailsViewController: UIViewController {
         nvc.moodDetails = moodDetails
         nvc.chosenMonth = datePickerMonth
         nvc.chosenYear = year
+        }
     }
 }
