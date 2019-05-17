@@ -22,6 +22,7 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
     var chosenMonth: Int!
     var chosenYear: Int!
     var moodDetails: String!
+    var moods: [Mood] = []
     
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     let daysOfMonth = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
