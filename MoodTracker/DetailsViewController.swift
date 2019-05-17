@@ -33,13 +33,12 @@ class DetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-//    @IBAction func datePickerChanged(_ sender: Any) {
-//        let formatter = DateFormatter()
-//        formatter.dateStyle = .full
-//        formatter.timeStyle = .none
-//        stringDate = formatter.string(from: datePicker.date)
-//        print(stringDate)
-//    }
+    @IBAction func datePickerChanged(_ sender: Any) {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .full
+        formatter.timeStyle = .none
+        stringDate = formatter.string(from: datePicker.date)
+    }
     
     @IBAction func whenAddButtonPressed(_ sender: Any) {
 //        for month in months {
