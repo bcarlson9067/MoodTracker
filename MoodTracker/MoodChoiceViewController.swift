@@ -13,14 +13,34 @@ class MoodChoiceViewController: UIViewController {
     
     var mood: String!
     var buttonColor: UIColor!
+    @IBOutlet weak var redButton: UIButton!
+    @IBOutlet weak var orangeButton: UIButton!
+    @IBOutlet weak var yellowButton: UIButton!
+    @IBOutlet weak var greenButton: UIButton!
+    @IBOutlet weak var blueButton: UIButton!
+    @IBOutlet weak var purpleButton: UIButton!
+    @IBOutlet weak var pinkButton: UIButton!
+    @IBOutlet weak var greyButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        self.applyRoundCorner(whenRedButtonPressed as AnyObject)
+        redButton.layer.cornerRadius = 22
+        orangeButton.layer.cornerRadius = 22
+        yellowButton.layer.cornerRadius = 22
+        greenButton.layer.cornerRadius = 22
+        blueButton.layer.cornerRadius = 22
+        purpleButton.layer.cornerRadius = 22
+        pinkButton.layer.cornerRadius = 22
+        greyButton.layer.cornerRadius = 22
+        
         // Do any additional setup after loading the view.
     }
-
+    //function to make buttons round
+    func applyRoundCorner(_ object: AnyObject) {
+        object.layer?.cornerRadius = 22
+        object.layer?.masksToBounds = true
+    }
     @IBAction func whenRedButtonPressed(_ sender: UIButton) {
         mood = "Angry"
         buttonColor = sender.backgroundColor

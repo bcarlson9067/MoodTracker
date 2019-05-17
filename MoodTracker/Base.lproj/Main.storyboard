@@ -231,6 +231,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="knn-qk-Cqf"/>
                     <connections>
+                        <outlet property="blueButton" destination="6h5-ZU-9FF" id="8GE-Ib-L4J"/>
+                        <outlet property="greenButton" destination="hkD-ZK-jAb" id="FDR-7N-hXm"/>
+                        <outlet property="greyButton" destination="QhB-2V-eNE" id="sbA-4r-9II"/>
+                        <outlet property="orangeButton" destination="e1B-cr-8Dj" id="dkP-QK-J0H"/>
+                        <outlet property="pinkButton" destination="byn-Xd-v7R" id="3Ig-xW-n6t"/>
+                        <outlet property="purpleButton" destination="8WH-iL-j8C" id="Q4h-mr-gmF"/>
+                        <outlet property="redButton" destination="8DU-1E-Wph" id="dBq-CP-gPX"/>
+                        <outlet property="yellowButton" destination="dtb-6l-A3U" id="r7z-MX-8U1"/>
                         <segue destination="TaC-6K-QmF" kind="show" identifier="moodSegue" id="yDI-go-3bs"/>
                     </connections>
                 </viewController>
