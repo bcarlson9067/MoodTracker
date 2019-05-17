@@ -16,9 +16,9 @@ class DetailsViewController: UIViewController {
     var chosenMonth: String!
     var datePickerDate: Date!
     var day: Int!
-    var datePickerMonth: Int!
+    var month: Int!
     var year: Int!
-    
+    var newMood: Mood!
     var moodDetails: String!
     let months: [String] = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     @IBOutlet weak var moodLabel: UILabel!
@@ -41,12 +41,12 @@ class DetailsViewController: UIViewController {
     }
     
     @IBAction func whenAddButtonPressed(_ sender: Any) {
-//        for month in months {
-//            if stringDate.contains(month) {
-//                chosenMonth = month
-//                print(chosenMonth!)
-//            }
-//        }
+        //        for month in months {
+        //            if stringDate.contains(month) {
+        //                chosenMonth = month
+        //                print(chosenMonth!)
+        //            }
+        //        }
         if detailsTextField.text != nil {
             moodDetails = detailsTextField.text
         } else {
@@ -58,12 +58,20 @@ class DetailsViewController: UIViewController {
         let nvc = segue.destination as! CalendarViewController
         datePickerDate = datePicker.date
         day = calendar.component(.day, from: datePickerDate)
-        datePickerMonth = calendar.component(.month, from: datePickerDate)
+        month = calendar.component(.month, from: datePickerDate)
         year = calendar.component(.year, from: datePickerDate)
         nvc.chosenDay = day
         nvc.chosenColor = buttonColor
         nvc.moodDetails = moodDetails
-        nvc.chosenMonth = datePickerMonth
+        nvc.chosenMonth = month
         nvc.chosenYear = year
+        if let newMoodName = mood, let newMoodDetails = moodDetails, let newMoodDate = datePickerDate, let newMoodDay = day, let newMoodMonth = month, let newMoodYear = year {
+            newMood = Mood(mood: newMoodName, moodDetails: newMoodDetails, datePickerDate: newMoodDate, day: newMoodDay, month: newMoodMonth, year: newMoodYear)
+        }
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        if let encoded = try?JSONEncoder().encode(newMood) {
+            UserDefaults.standard.set(encoded, forKey: "newMood")
+        }
     }
 }

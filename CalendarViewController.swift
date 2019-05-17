@@ -38,6 +38,26 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
         monthLabel.text = "\(currentMonth) \(year)"
         getStartDayPosition()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        retrieveMoods()
+        
+        var retrievedMood: Mood
+        if let object = UserDefaults.standard.data(forKey: "newMood"){
+            if let objectDecoded = try?JSONDecoder().decode(Mood.self, from: object) as Mood {
+                if objectDecoded.mood != "" {
+                    retrievedMood = objectDecoded
+                    if moods.contains(where: { $0.mood == "\(objectDecoded.mood)" }) == false {
+                        moods.append(retrievedMood)
+                    }
+                }
+            }
+        }
+        Calendar.reloadData()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        saveMoods()
+    }
     
     @IBAction func backButtonPressed(_ sender: Any) {
         switch currentMonth {
@@ -149,6 +169,19 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
             cell.backgroundColor = chosenColor
         }
         return cell
+    }
+    func saveMoods() {
+        if let encoded = try? JSONEncoder().encode(moods) {
+            UserDefaults.standard.set(encoded, forKey: "Moods")
+        }
+    }
+    func retrieveMoods() {
+        if let object = UserDefaults.standard.data(forKey: "Moods"){
+            if let objectDecoded = try?JSONDecoder().decode([Mood].self, from: object) as [Mood] {
+                moods = objectDecoded
+                Calendar.reloadData()
+            }
+        }
     }
 }
 
