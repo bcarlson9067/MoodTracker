@@ -42,7 +42,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.87524724212940674" green="0.90982345255621455" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.89229723856533849" green="0.89229723856533849" blue="0.89229723856533849" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="sCH-1O-ynQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="SQE-Gf-tn3"/>
@@ -454,7 +454,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="DvD-KV-pSQ" userLabel="Navigation Item">
                         <nil key="title"/>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zzM-KW-gMp">
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zzM-KW-gMp">
                             <rect key="frame" x="179" y="4" width="56" height="36"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -496,6 +496,7 @@
         <image name="moodTrackerLogo" width="342" height="282"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="jvX-mC-tde"/>
         <segue reference="3qg-kh-Xei"/>
     </inferredMetricsTieBreakers>
 </document>
