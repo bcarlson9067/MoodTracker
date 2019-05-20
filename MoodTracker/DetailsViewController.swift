@@ -29,7 +29,12 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
         moodLabel.text = mood
         moodLabel.backgroundColor = buttonColor
-        
+        moodLabel.layer.shadowColor = UIColor.black.cgColor
+        moodLabel.layer.shadowRadius = 4
+        moodLabel.layer.shadowOpacity = 0.5
+        moodLabel.layer.shadowOffset = CGSize(width: 0, height: 0)
+        self.moodLabel.layer.cornerRadius = 22
+        moodLabel.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
     
@@ -70,9 +75,10 @@ class DetailsViewController: UIViewController {
             newMood = Mood(mood: newMoodName, moodDetails: newMoodDetails, datePickerDate: newMoodDate, day: newMoodDay, month: newMoodMonth, year: newMoodYear)
         }
     }
-    override func viewWillDisappear(_ animated: Bool) {
+        func viewWillDisappear(_ animated: Bool) {
         if let encoded = try?JSONEncoder().encode(newMood) {
             UserDefaults.standard.set(encoded, forKey: "newMood")
         }
     }
+}
 }

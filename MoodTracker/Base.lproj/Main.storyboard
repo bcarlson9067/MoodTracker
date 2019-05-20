@@ -42,7 +42,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.89229723856533849" green="0.89229723856533849" blue="0.89229723856533849" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.92000033810000004" green="0.94219859480000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="sCH-1O-ynQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="SQE-Gf-tn3"/>
@@ -220,7 +220,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.9200003380729429" green="0.94219859482300006" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bTK-wd-6r8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="1v1-mz-4ie"/>
                             <constraint firstItem="bTK-wd-6r8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="10" id="3Rz-nh-JEK"/>
@@ -259,26 +259,26 @@
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fvj-gL-x0h">
                                 <rect key="frame" x="10" y="54" width="394" height="798"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Selected:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgy-7s-JnH">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="71"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mood Selected:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgy-7s-JnH">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="61"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="26"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReZ-NA-Ai3">
-                                        <rect key="frame" x="0.0" y="81" width="394" height="70.5"/>
+                                        <rect key="frame" x="0.0" y="71" width="394" height="71.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter details here" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EGL-Q4-qOM">
-                                        <rect key="frame" x="0.0" y="161.5" width="394" height="59"/>
+                                        <rect key="frame" x="0.0" y="152.5" width="394" height="60"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="EFh-Eh-J3N">
-                                        <rect key="frame" x="0.0" y="230.5" width="394" height="424.5"/>
+                                        <rect key="frame" x="0.0" y="222.5" width="394" height="430"/>
                                         <date key="date" timeIntervalSinceReferenceDate="578938527.50196397">
                                             <!--2019-05-07 16:15:27 +0000-->
                                         </date>
@@ -288,7 +288,7 @@
                                         </connections>
                                     </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOh-MK-nVf">
-                                        <rect key="frame" x="0.0" y="665" width="394" height="133"/>
+                                        <rect key="frame" x="0.0" y="662.5" width="394" height="135.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="Add"/>
                                         <connections>
@@ -299,7 +299,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92000033810000004" green="0.94219859480000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Fvj-gL-x0h" firstAttribute="leading" secondItem="z9e-DF-D2l" secondAttribute="leading" constant="10" id="L4k-tj-BoZ"/>
                             <constraint firstItem="z9e-DF-D2l" firstAttribute="trailing" secondItem="Fvj-gL-x0h" secondAttribute="trailing" constant="10" id="R22-F3-xIC"/>
@@ -418,7 +418,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Bdf-lS-LMQ">
                                 <rect key="frame" x="39" y="326" width="334" height="302"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.92000033810000004" green="0.94219859480000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="L80-h0-iVf">
                                     <size key="itemSize" width="40" height="40"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -449,7 +449,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92000033810000004" green="0.94219859480000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="SmT-1t-D8K"/>
                     </view>
                     <navigationItem key="navigationItem" id="DvD-KV-pSQ" userLabel="Navigation Item">
@@ -496,7 +496,6 @@
         <image name="moodTrackerLogo" width="342" height="282"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jvX-mC-tde"/>
         <segue reference="3qg-kh-Xei"/>
     </inferredMetricsTieBreakers>
 </document>
