@@ -70,9 +70,10 @@ class DetailsViewController: UIViewController {
             newMood = Mood(mood: newMoodName, moodDetails: newMoodDetails, datePickerDate: newMoodDate, day: newMoodDay, month: newMoodMonth, year: newMoodYear)
         }
     }
-    override func viewWillDisappear(_ animated: Bool) {
-        if let encoded = try?JSONEncoder().encode(newMood) {
-            UserDefaults.standard.set(encoded, forKey: "newMood")
-        }
-    }
+//        override func viewWillDisappear(_ animated: Bool) {
+//        if let encoded = try?JSONEncoder().encode(newMood) {
+//            UserDefaults.standard.set(encoded, forKey: "newMood")
+//        }
+//    }
+}
 }
