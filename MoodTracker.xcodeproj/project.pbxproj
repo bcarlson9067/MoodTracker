@@ -50,7 +50,6 @@
 		89F16DB92278AAEA008DB620 = {
 			isa = PBXGroup;
 			children = (
-				89C3ACAB228B249F00353FC6 /* CalendarViewController.swift */,
 				89F16DC42278AAEA008DB620 /* MoodTracker */,
 				89F16DC32278AAEA008DB620 /* Products */,
 			);
@@ -67,6 +66,7 @@
 		89F16DC42278AAEA008DB620 /* MoodTracker */ = {
 			isa = PBXGroup;
 			children = (
+				89C3ACAB228B249F00353FC6 /* CalendarViewController.swift */,
 				89F16DC52278AAEA008DB620 /* AppDelegate.swift */,
 				89F16DC72278AAEA008DB620 /* MoodChoiceViewController.swift */,
 				89F16DC92278AAEA008DB620 /* Main.storyboard */,
