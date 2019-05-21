@@ -22,14 +22,15 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
     var chosenMonth: Int!
     var chosenYear: Int!
     var moodDetails: String!
-    var moods: [Mood] = []
+    var moods: [Int: Mood] = [:]
+    let moodColors: [String: UIColor] = ["Angry": UIColor.init(red: 255, green: 0, blue: 0, alpha: 100), "Sad": UIColor.init(red: 0, green: 122, blue: 255, alpha: 100)]
     
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     let daysOfMonth = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     var daysInMonths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     
     override func viewDidLoad() {
-
+        
         Calendar.delegate = self
         Calendar.dataSource = self
         super.viewDidLoad()
@@ -47,9 +48,8 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
             if let objectDecoded = try?JSONDecoder().decode(Mood.self, from: object) as Mood {
                 if objectDecoded.mood != "" {
                     retrievedMood = objectDecoded
-                    if moods.contains(where: { $0.mood == "\(objectDecoded.mood)" }) == false {
-                        moods.append(retrievedMood)
-                    }
+                    let retrievedDate = Int(retrievedMood.day)
+                    moods[retrievedDate] = retrievedMood
                 }
             }
         }
@@ -166,9 +166,13 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
         if Int(cell.dateLabel.text!)! < 1 {
             cell.isHidden = true
         }
-        if Int(cell.dateLabel.text!)! == chosenDay && currentMonth == months[chosenMonth - 1] && year == chosenYear {
-            cell.backgroundColor = chosenColor
-        }
+        //        if Int(cell.dateLabel.text!)! == chosenDay && currentMonth == months[chosenMonth - 1] && year == chosenYear {
+        //            cell.backgroundColor = chosenColor
+        //        }
+        let mood = moods[indexPath.row]
+        let moodName = mood?.mood
+        cell.backgroundColor = moodColors["\(moodName)"]
+        
         return cell
     }
     func saveMoods() {
@@ -178,14 +182,11 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     func retrieveMoods() {
         if let object = UserDefaults.standard.data(forKey: "Moods"){
-            if let objectDecoded = try?JSONDecoder().decode([Mood].self, from: object) as [Mood] {
+            if let objectDecoded = try?JSONDecoder().decode([Int: Mood].self, from: object) as [Int: Mood] {
                 moods = objectDecoded
                 Calendar.reloadData()
             }
         }
-    }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        <#code#>
     }
 }
 

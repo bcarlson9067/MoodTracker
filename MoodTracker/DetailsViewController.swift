@@ -59,27 +59,28 @@ class DetailsViewController: UIViewController {
         }
         detailsTextField.resignFirstResponder()
     }
-    override func prepare(for segue: UIStoryboardSegue , sender: Any?) {
-        if segue.identifier == "detailsToCalendarSegue" {
-        let nvc = segue.destination as! CalendarViewController
-        datePickerDate = datePicker.date
-        day = calendar.component(.day, from: datePickerDate)
-        month = calendar.component(.month, from: datePickerDate)
-        year = calendar.component(.year, from: datePickerDate)
-        nvc.chosenDay = day
-        nvc.chosenColor = buttonColor
-        nvc.moodDetails = moodDetails
-        nvc.chosenMonth = month
-        nvc.chosenYear = year
-        if let newMoodName = mood, let newMoodDetails = moodDetails, let newMoodDate = datePickerDate, let newMoodDay = day, let newMoodMonth = month, let newMoodYear = year {
-            newMood = Mood(mood: newMoodName, moodDetails: newMoodDetails, datePickerDate: newMoodDate, day: newMoodDay, month: newMoodMonth, year: newMoodYear)
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        if let encoded = try?JSONEncoder().encode(newMood) {
+            UserDefaults.standard.set(encoded, forKey: "newMood")
         }
     }
-//        override func viewWillDisappear(_ animated: Bool) {
-//        if let encoded = try?JSONEncoder().encode(newMood) {
-//            UserDefaults.standard.set(encoded, forKey: "newMood")
-//        }
-//    }
+    
+    override func prepare(for segue: UIStoryboardSegue , sender: Any?) {
+        if segue.identifier == "detailsToCalendarSegue" {
+            let nvc = segue.destination as! CalendarViewController
+            datePickerDate = datePicker.date
+            day = calendar.component(.day, from: datePickerDate)
+            month = calendar.component(.month, from: datePickerDate)
+            year = calendar.component(.year, from: datePickerDate)
+            nvc.chosenDay = day
+            nvc.chosenColor = buttonColor
+            nvc.moodDetails = moodDetails
+            nvc.chosenMonth = month
+            nvc.chosenYear = year
+            if let newMoodName = mood, let newMoodDetails = moodDetails, let newMoodDate = datePickerDate, let newMoodDay = day, let newMoodMonth = month, let newMoodYear = year {
+                newMood = Mood(mood: newMoodName, moodDetails: newMoodDetails, datePickerDate: newMoodDate, day: newMoodDay, month: newMoodMonth, year: newMoodYear)
+            }
+        }
+    }
 }
-}
-
