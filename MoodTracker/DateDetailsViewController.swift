@@ -10,6 +10,10 @@ import UIKit
 
 class DateDetailsViewController: UIViewController {
 
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var moodLabel: UILabel!
+    @IBOutlet weak var detailsLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
