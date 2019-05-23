@@ -260,25 +260,25 @@
                                 <rect key="frame" x="10" y="54" width="394" height="798"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mood Selected:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgy-7s-JnH">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="61"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="55"/>
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="26"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReZ-NA-Ai3">
-                                        <rect key="frame" x="0.0" y="71" width="394" height="71.5"/>
+                                        <rect key="frame" x="0.0" y="65" width="394" height="65"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter details here" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EGL-Q4-qOM">
-                                        <rect key="frame" x="0.0" y="152.5" width="394" height="60"/>
+                                        <rect key="frame" x="0.0" y="140" width="394" height="54"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="EFh-Eh-J3N">
-                                        <rect key="frame" x="0.0" y="222.5" width="394" height="430"/>
+                                        <rect key="frame" x="0.0" y="204" width="394" height="389.5"/>
                                         <date key="date" timeIntervalSinceReferenceDate="578938527.50196397">
                                             <!--2019-05-07 16:15:27 +0000-->
                                         </date>
@@ -287,10 +287,9 @@
                                             <action selector="datePickerChanged:" destination="TaC-6K-QmF" eventType="valueChanged" id="JUJ-7q-Zbo"/>
                                         </connections>
                                     </datePicker>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOh-MK-nVf">
-                                        <rect key="frame" x="0.0" y="662.5" width="394" height="135.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                        <state key="normal" title="Add"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOh-MK-nVf">
+                                        <rect key="frame" x="0.0" y="603.5" width="394" height="194.5"/>
+                                        <state key="normal" image="plus"/>
                                         <connections>
                                             <action selector="whenAddButtonPressed:" destination="TaC-6K-QmF" eventType="touchUpInside" id="ddv-V8-kRh"/>
                                             <segue destination="AWs-Ef-dBL" kind="show" identifier="detailsToCalendarSegue" id="z3K-DJ-n8F"/>
@@ -511,7 +510,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92000033810000004" green="0.94219859480000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Aro-Ud-tSA" firstAttribute="bottom" secondItem="8DR-eh-Ael" secondAttribute="bottom" id="9qA-C8-hgk"/>
                             <constraint firstItem="Aro-Ud-tSA" firstAttribute="trailing" secondItem="8DR-eh-Ael" secondAttribute="trailing" id="HJX-cl-vMz"/>
@@ -551,6 +550,7 @@
     </scenes>
     <resources>
         <image name="moodTrackerLogo" width="342" height="282"/>
+        <image name="plus" width="90" height="90"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="3qg-kh-Xei"/>
