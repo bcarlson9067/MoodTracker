@@ -260,25 +260,25 @@
                                 <rect key="frame" x="10" y="54" width="394" height="798"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mood Selected:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgy-7s-JnH">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="65"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="55"/>
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="26"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReZ-NA-Ai3">
-                                        <rect key="frame" x="0.0" y="75" width="394" height="76.5"/>
+                                        <rect key="frame" x="0.0" y="65" width="394" height="65"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter details here" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EGL-Q4-qOM">
-                                        <rect key="frame" x="0.0" y="161.5" width="394" height="64"/>
+                                        <rect key="frame" x="0.0" y="140" width="394" height="54"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="EFh-Eh-J3N">
-                                        <rect key="frame" x="0.0" y="235.5" width="394" height="460.5"/>
+                                        <rect key="frame" x="0.0" y="204" width="394" height="389.5"/>
                                         <date key="date" timeIntervalSinceReferenceDate="578938527.50196397">
                                             <!--2019-05-07 16:15:27 +0000-->
                                         </date>
@@ -288,7 +288,7 @@
                                         </connections>
                                     </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOh-MK-nVf">
-                                        <rect key="frame" x="0.0" y="706" width="394" height="92"/>
+                                        <rect key="frame" x="0.0" y="603.5" width="394" height="194.5"/>
                                         <state key="normal" image="plus"/>
                                         <connections>
                                             <action selector="whenAddButtonPressed:" destination="TaC-6K-QmF" eventType="touchUpInside" id="ddv-V8-kRh"/>
@@ -485,27 +485,26 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KS1-9K-yL3">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="163.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="134.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mood" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZV-Eg-Nb9">
-                                        <rect key="frame" x="0.0" y="163.5" width="414" height="163.5"/>
+                                        <rect key="frame" x="0.0" y="134.5" width="414" height="134.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBb-Zq-jve">
-                                        <rect key="frame" x="0.0" y="327" width="414" height="164"/>
+                                        <rect key="frame" x="0.0" y="269" width="414" height="134.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHD-28-9lo">
-                                        <rect key="frame" x="0.0" y="491" width="414" height="327"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="Edit"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHD-28-9lo">
+                                        <rect key="frame" x="0.0" y="403.5" width="414" height="414.5"/>
+                                        <state key="normal" image="edit"/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -549,6 +548,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="edit" width="70" height="74"/>
         <image name="moodTrackerLogo" width="342" height="282"/>
         <image name="plus" width="90" height="90"/>
     </resources>
